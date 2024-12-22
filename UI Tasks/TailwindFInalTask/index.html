@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>  
+    <div class="lg:grid grid-cols-12 bg-cyan-900">
+        <div class="hidden lg:block col-span-2" id="menu">
+            <!-- Dashboard -->
+            <div class="flex flex-col pl-[45px]" >
+                <div class="mt-[20px] flex justify-between">
+                    <img src="/UI Tasks/TailwindFInalTask/assets/logo1.png" alt="">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" onclick="menuFun(false)" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 text-white bg-black rounded-full lg:hidden">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                    </svg> 
+                </div>
+                <div class="flex justify-start mt-[40px] mb-[20px]">
+                    <img class="inline-block" src="/UI Tasks/TailwindFInalTask/assets/dashboard (6).svg" alt="">
+                    <span class="text-[20px] ml-[20px] text-black">Dashboard</span>
+                </div>
+                <div class="flex justify-start my-[20px]">
+                    <img class="inline-block" src="/UI Tasks/TailwindFInalTask/assets/folder (2).svg" alt="">
+                    <span class="text-[20px] ml-[20px] text-black" style="color: #BCC0D7;">Classes</span>
+                </div>                
+                <div class="flex justify-start my-[20px]">
+                    <img class="inline-block" src="/UI Tasks/TailwindFInalTask/assets/book (1).svg" alt="">
+                    <span class="text-[20px] ml-[20px] text-black" style="color: #BCC0D7;" >Resources</span>
+                </div>                
+                <div class="flex justify-start my-[20px]">
+                    <img class="inline-block" src="/UI Tasks/TailwindFInalTask/assets/calender (1).svg" alt="">
+                    <span class="text-[20px] ml-[20px] text-black" style="color: #BCC0D7;" >Learning Plan</span>
+                </div>                
+                <div class="flex justify-start my-[20px]">
+                    <img class="inline-block" src="/UI Tasks/TailwindFInalTask/assets/chat-bubble (1).svg" alt="">
+                    <span class="text-[20px] ml-[20px] text-black" style="color: #BCC0D7;" >Chat</span>
+                </div>                
+                <div class="flex justify-start my-[20px]">
+                    <img class="inline-block" src="/UI Tasks/TailwindFInalTask/assets/edit (9).svg" alt="">
+                    <span class="text-[20px] ml-[20px] text-black" style="color: #BCC0D7;" >Setting</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-span-7 p-[50px]" style="background-color:#F5F5FB ;">
+            <div class="flex justify-between">
+                <div class="lg:hidden " onclick="menuFun(false)">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-10 h-10">
+                        <path fill-rule="evenodd" d="M3 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 5.25Zm0 4.5A.75.75 0 0 1 3.75 9h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 9.75Zm0 4.5a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Zm0 4.5a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd" />
+                    </svg>                      
+                </div>
+                <div class="text-[24px]">Dashboard</div>
+                <div class="flex">
+                    <span class="mr-[20px] flex-[18px] mt-[5px] hidden md:block font-extralight">03,May 2024 Sunday </span>
+                    <img class="p-[8px] rounded-lg" style="background-color: #E5E9F9;" src="/UI Tasks/TailwindFInalTask/assets/search.svg" width="40px" alt="">
+                    <svg xmlns="http://www.w3.org/2000/svg" onclick="menuFun(true)" viewBox="0 0 24 24" fill="currentColor" class="w-10 h-10 lg:hidden">
+                        <path fill-rule="evenodd" d="M16.5 3.75a1.5 1.5 0 0 1 1.5 1.5v13.5a1.5 1.5 0 0 1-1.5 1.5h-6a1.5 1.5 0 0 1-1.5-1.5V15a.75.75 0 0 0-1.5 0v3.75a3 3 0 0 0 3 3h6a3 3 0 0 0 3-3V5.25a3 3 0 0 0-3-3h-6a3 3 0 0 0-3 3V9A.75.75 0 1 0 9 9V5.25a1.5 1.5 0 0 1 1.5-1.5h6Zm-5.03 4.72a.75.75 0 0 0 0 1.06l1.72 1.72H2.25a.75.75 0 0 0 0 1.5h10.94l-1.72 1.72a.75.75 0 1 0 1.06 1.06l3-3a.75.75 0 0 0 0-1.06l-3-3a.75.75 0 0 0-1.06 0Z" clip-rule="evenodd" />
+                    </svg>                      
+                </div>
+            </div>
+            <div class="lg:flex justify-center rounded-3xl block mt-6" style="background-color: #F7E5E9;">
+                <div class="mt-12 mr-16">
+                    <p class="text-[26px] text-pink-700">Welcome Back Sakthi!</p>
+                    <p class="mt-4">You've learned 80% of your goal this week!</p>
+                    <p>Keep it up and improve your results!</p>
+                </div>
+                <div><img src="/UI Tasks/TailwindFInalTask/assets/cut.png" class="" id="cut"></div>
+            </div>
+            <div class="lg:flex justify-start mt-[40px]">
+                <div class="lg:w-[600px] w-full border-2 p-8 rounded-3xl my-6 lg:my-0 bg-white">
+                    <p class="text-[20px] mb-8">Latest Result</p>
+                    <div class="flex justify-between border-b-2 pb-2"> Unit-5 - Technology
+                        <div class=" w-[90px]  bg-gray-200 rounded-full h-1.5 mb-4 dark:bg-gray-700 mt-3">
+                            <div class="bg-red-600 h-1.5 rounded-full dark:bg-red-500" style="width: 25%"></div>
+                        </div>
+                        <span class="ml-4  text-red-400">25%</span>
+                    </div>
+                    <div class="flex justify-between border-b-2 my-4 pb-2"> Unit-12 - Ecology
+                        <div class="ml-4 w-[90px] bg-gray-200 rounded-full h-1.5 mb-4 dark:bg-gray-700 mt-3">
+                            <div class="bg-blue-600 h-1.5 rounded-full dark:bg-red-500" style="width: 44%"></div>
+                        </div>
+                        <span class="ml-4 text-blue-400">44%</span>
+                    </div>
+                    <div class="flex justify-between border-b-2 my-4 pb-2"> Unit-9 - Real Estate
+                        <div class=" w-[90px] bg-gray-200 rounded-full h-1.5 mb-4 dark:bg-gray-700 mt-3">
+                            <div class="bg-blue-600 h-1.5 rounded-full dark:bg-red-500" style="width: 40%"></div>
+                        </div>
+                        <span class="ml-4 text-red-400">40%</span>
+                    </div>
+                    <div class="flex justify-between border-b-2 my-4 pb-2"> Unit-8 - Education
+                        <div class="ml-2 w-[90px] bg-gray-200 rounded-full h-1.5 mb-4 dark:bg-gray-700 mt-3">
+                            <div class="bg-red-600 h-1.5 rounded-full dark:bg-red-500" style="width: 18%"></div>
+                        </div>
+                        <span class="ml-4 text-red-400">18%</span>
+                    </div>
+                    <div class="flex justify-between my-4 pb-2"> Unit-5 - Job Market
+                        <div class=" w-[90px] bg-gray-200 rounded-full h-1.5 mb-4 dark:bg-gray-700 mt-3">
+                            <div class="bg-blue-600 h-1.5 rounded-full dark:bg-red-500" style="width: 75%"></div>
+                        </div>
+                        <span class="ml-4 text-red-400">75%</span>
+                    </div>
+                </div>
+                <div class="flex flex-col border-2 bg-white rounded-3xl lg:ml-5 w-full overflow-x-hidden">
+                    <p class="text-[20px] ml-6 mt-8">Time Spending in Learning</p>
+                    <canvas class="w-full" id="myChart" style=""></canvas>
+                    <div class="flex justify-between mt-4 mx-6">
+                        <div class="flex">
+                            <div class="bg-red-500 h-4 w-4 rounded-full mt-1"></div>
+                            <div class="font-extralight mx-2">Vocabulary</div>
+                        </div>
+                        <div class="flex">
+                            <div class="bg-blue-700 h-4 w-4 rounded-full mt-1"></div>
+                            <div class="font-extralight mx-2">Grammer</div>
+                        </div>                        
+                        <div class="flex">
+                            <div class="bg-blue-500 h-4 w-4 rounded-full mt-1"></div>
+                            <div class="font-extralight mx-2">Listening</div>
+                        </div>                        
+                        <div class="flex">
+                            <div class="bg-blue-100 h-4 w-4 rounded-full mt-1"></div>
+                            <div class="font-extralight mx-2">Writing</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-[20px] mt-[30px]">Your Courses</div>
+            <div class="lg:grid grid-cols-3 gap-10 mt-[60px]">
+                <div class="flex justify-between text-white px-10 py-[20px] rounded-3xl lg:my-0 my-4" style="background-color: #4D4CAC;">
+                    <div class="p-[25px] bg-white inline-block rounded-xl text-[30px]" style="background-color: #5A5AB2;">B2</div>
+                    <div class="flex flex-col self-center">
+                        <div class="text-[14px] ">Business English</div>
+                        <div class="text-[20px]">Grammer</div>
+                    </div>
+                    <div class="self-end">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                         </svg>                          
+                    </div>
+                </div>
+                <div class="flex justify-between text-white px-10 py-[20px] rounded-3xl lg:my-0 my-6" style="background-color: #9698D6;">
+                    <div class="p-[25px] bg-white inline-block rounded-xl text-[30px]" style="background-color: #A4A6DB;">B2</div>
+                    <div class="flex flex-col self-center">
+                        <div class="text-[14px] ">Business English</div>
+                        <div class="text-[20px]">Grammer</div>
+                    </div>
+                    <div class="self-end">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                        </svg>                          
+                    </div>
+                </div>
+                <div class="flex justify-between text-white px-10 py-[20px] rounded-3xl lg:my-0 my-6" style="background-color: #FF808B;">
+                    <div class="p-[25px] bg-white inline-block rounded-xl text-[30px]" style="background-color: #FF919B;">B2</div>
+                    <div class="flex flex-col self-center">
+                        <div class="text-[14px] ">Business English</div>
+                        <div class="text-[20px]">Grammer</div>
+                    </div>
+                    <div class="self-end">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                        </svg>                          
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hidden lg:block col-span-3" id="logout">
+            <div class="flex justify-between px-12 pt-12" >
+                <div class="text-[20px]">Logout</div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path fill-rule="evenodd" d="M7.5 3.75A1.5 1.5 0 0 0 6 5.25v13.5a1.5 1.5 0 0 0 1.5 1.5h6a1.5 1.5 0 0 0 1.5-1.5V15a.75.75 0 0 1 1.5 0v3.75a3 3 0 0 1-3 3h-6a3 3 0 0 1-3-3V5.25a3 3 0 0 1 3-3h6a3 3 0 0 1 3 3V9A.75.75 0 0 1 15 9V5.25a1.5 1.5 0 0 0-1.5-1.5h-6Zm10.72 4.72a.75.75 0 0 1 1.06 0l3 3a.75.75 0 0 1 0 1.06l-3 3a.75.75 0 1 1-1.06-1.06l1.72-1.72H9a.75.75 0 0 1 0-1.5h10.94l-1.72-1.72a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+                    </svg>                      
+                </div>
+            </div>
+            <div class="flex flex-col items-center relative">
+                <img class="mt-8 border-4  border-slate-400 rounded-full w-48" src="/UI Tasks/TailwindFInalTask/assets/db.jpg" alt="">
+                <!-- <div class="absolute bottom-28 right-[155px]"> -->
+                <!-- <img class="border-4 rounded-full absolute bottom-28 left-[18rem]" src="/UI Tasks/TailwindFInalTask/assets/Layer 2.svg" style="background-color: #6888F4;" alt=""> -->
+            <!-- </div> -->
+                <span class="text-[28px] mt-8 font-bold">Stark Sakthi</span>
+                <span class="font-light">Student</span>
+            </div>
+            <div class="">
+                <div class="flex text-black mt-8 px-10 py-[20px]">
+                    <div class="p-[15px] mr-[20px] bg-white inline-block rounded-xl text-[26px]" style="background-color: #ECECF4;">B2</div>
+                    <div class="flex flex-col">
+                        <div class="text-[20px] self-start mt-2">English</div>
+                        <div class="text-[14px] font-light">High Intermideate</div>
+                    </div>
+                </div>
+                <div class="flex text-black px-10 py-[20px]">
+                    <div class="p-[15px] mr-[20px] bg-white inline-block rounded-xl text-[26px]" style="background-color: #ECECF4;">A1</div>
+                    <div class="flex flex-col">
+                        <div class="text-[20px] self-start mt-2">Japanese</div>
+                        <div class="text-[14px] font-light">High Intermideate</div>
+                    </div>
+                </div>
+                <div class="text-[20px] px-12 pt-12 font-bold inline-block">Reminders</div>
+                <div class="flex text-black px-10 py-[20px]">
+                    <div class="p-[15px] mr-[20px] bg-white inline-block rounded-xl text-[26px]" style="background-color: #FE616F3B;">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z" />
+                        </svg>                          
+                    </div>
+                    <div class="flex flex-col">
+                        <div class="text-[20px] self-start">Eng-Vocabulary Test</div>
+                        <div class="text-[14px] font-light">21 Jan 2023, Monday</div>
+                    </div>
+                </div>
+                <div class="flex text-black px-10 py-[20px] rounded-3xl">
+                    <div class="p-[15px] mr-[20px] bg-white inline-block rounded-xl text-[26px]" style="background-color: #6888F428;">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+                        </svg>
+                    </div>
+                    <div class="flex flex-col">
+                        <div class="text-[20px] self-start">Eng-Home work</div>
+                        <div class="text-[14px] font-light">21 Jan 2023, Monday</div>
+                    </div>
+                </div>
+                <div class="flex text-black px-10 py-[20px] rounded-3xl">
+                    <div class="p-[15px] mr-[20px] bg-white inline-block rounded-xl text-[26px]" style="background-color: #6888F428;">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+                        </svg>                          
+                    </div>
+                    <div class="flex flex-col">
+                        <div class="text-[20px] self-start">Japnese-Send Essay</div>
+                        <div class="text-[14px] font-light">21 Jan 2023, Monday</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+     <script>
+        var xValues = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
+        var yValues = [55, 54, 44.8, 44.8, 45.7, 39.5, 56];
+        var barColors = ["red", "blue","blue","red","red","red","blue"];
+        
+        new Chart("myChart", {
+          type: "bar",
+          data: {
+            labels: xValues,
+            datasets: [{
+              label : xValues,
+              backgroundColor: barColors,
+              data: yValues
+            }]
+          },
+          options: {
+            legend: {display: true},
+            title: {
+              display: true,
+            },
+            scales: {
+              xAxes: [{
+                
+                barPercentage: 0.1,
+                categorySpacing: 5 
+              }]
+            }
+          }
+        });
+      </script>
+      <script>
+        let val=document.getElementById('menu');
+        let val1=document.getElementById('logout');
+        function menuFun(flag){
+            let temp=(flag)?val1:val;
+            if(temp.className=="hidden lg:block col-span-3"&&flag){
+                temp.className="absolute top-[130px] bg-gray-100 w-full px-8";
+                temp.style.transform="translateX(30%)";
+                temp.animate(
+                { transform: 'translateX(0)'}, 
+                {
+                duration: 700,
+                fill: 'forwards'
+                });
+            }
+            else if(temp.className=="hidden lg:block col-span-2"&&flag==false){
+                temp.className="absolute bg-gray-100 px-8 transition-transform delay-75";
+                cut.className="hidden";
+                temp.style.transform="translateX(-20%)";
+                temp.animate(
+                { transform: 'translateX(0)'}, 
+                {
+                duration: 700,
+                fill: 'forwards'
+                });
+            }
+            else if(temp.className=="absolute top-[130px] bg-gray-100 w-full px-8"){
+                temp.className="hidden lg:block col-span-3"
+            }
+            else{
+                temp.className="hidden lg:block col-span-2"
+                cut.className="block"
+            }
+        }
+    </script>
+</body>
+</html>

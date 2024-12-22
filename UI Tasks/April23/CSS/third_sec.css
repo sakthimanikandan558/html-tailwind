@@ -1,0 +1,95 @@
+.brand_txt{
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+    margin-bottom: 70px;
+}
+.brandimg{
+    width: 200px;
+    height: 110px;
+}
+.brand_logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1000px;
+    margin-left: 25%;
+}
+.brand_cont{
+    background-color: #F5F5F5;
+    padding-bottom: 130px;
+    padding-top: 70px;
+    margin-bottom: 80px;
+}
+.utxt1{
+    font-size: 30px;
+    text-align: center;
+}
+.utxt2{
+    font-size: 18px;
+    color: #686868;
+    text-align: center;
+}
+.update_div{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+.txt_bar{
+    border: 1px solid rgb(199, 198, 198);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 210px;
+    margin-left: 5px;
+}
+.s_button{
+    display: inline-block;
+    padding: 10px 25px 10px 25px;
+    color: white;
+    background-color: rgb(249, 79, 107);
+    display: inline;
+    margin-left: 5px;
+}
+.add_div{
+    display: flex;
+    justify-content: center;
+    background-color: #F5F5F5;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.head_1{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.head_2{
+    font-size: 18px;
+    margin: 0px 80px 0px 80px;
+}
+.info{
+    margin: 0px 80px 0px 80px;
+}
+.footer{
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 20px 0px 20px 0px;
+}
+.txt_1{
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+.payimg{
+    width: 250px;
+}
+.follow_icon{
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+}
+.add_div2{
+    display: flex;
+    padding: 35px;
+    justify-content: center;
+    background-color: #F5F5F5;
+    border-top:1px solid black ;
+}

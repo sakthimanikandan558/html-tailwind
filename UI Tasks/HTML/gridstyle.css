@@ -1,0 +1,15 @@
+.txt{
+    background-color: aqua;
+    color: black;
+    font-size: 35px;
+    padding: 50px;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.box{
+    display: grid;
+    justify-content: center;
+}

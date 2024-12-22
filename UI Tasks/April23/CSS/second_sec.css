@@ -1,0 +1,77 @@
+.div_des{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin:45px 300px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid black;
+}
+h3{
+    text-align: center
+}
+.div_des_p{
+    padding: 0px 20px 0px 20px;
+    border-right: 1px solid black;
+}
+.div_des_p1{
+    border: none;
+}
+.des_p{
+    text-align-last: center;
+}
+.txt1{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+.div_companies{
+    display: inline-flex;
+    flex-direction: row;
+    width: 300px;
+    justify-content: space-between;
+    margin-left: 800px;
+    margin-bottom: 60px;
+}
+.com_txt1{
+    font-size: 20px;
+    color: rgb(249, 79, 107);
+}
+.com_txt2{
+    font-size: 20px;
+}
+.com_txt1:hover{
+    text-decoration: underline;
+    text-decoration-thickness: 20%;
+}
+.com_txt2:hover{
+    color: rgb(249, 79, 107);
+    text-decoration: underline;
+    text-decoration-thickness: 20%;
+}
+.img1_div{
+    display: flex;
+    flex-direction: row;
+    margin-left: 20%;
+    width: 700px;
+    margin-bottom: 80px;
+    justify-content: space-between;
+}
+.watch_img1{
+    width: 400px;
+    height: 400px;
+}
+.wcost,.wname{
+    font-size: 18px;
+    text-align: center;
+}
+.img2_div{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+.product_txt{
+    font-size: 30px;
+    margin-left: 18%;
+    margin-bottom: 50px;
+}

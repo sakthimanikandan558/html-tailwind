@@ -1,0 +1,83 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    margin: 0px 600px 0px 600px;
+}
+.button{
+    background-color: aquamarine;
+    padding: 20px;
+    border-radius: 7px;
+}
+.imgdiv{
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid black;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.wallpaper_img{
+    width: 1500px;
+    height: 600px;
+}
+.div2_con{
+    display: flex;
+    justify-content: space-between;
+}
+.line{
+    border-width:1px;
+    border-color: black;
+}
+.imgdiv2{
+    display: flex;
+    margin: 30px 200px 0px 200px;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    border-bottom: 2px solid black;
+    /* width: 1000px; */
+}
+.bike_img{
+    width: 420px;
+}
+.para1{
+    width: 300px;
+    border: 2px solid black;
+    margin-top: 40px;
+    margin-left: 10px;
+    padding: 10px;
+    line-height: 30px;
+    font-size: 20px;
+}
+.container4{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+.add_div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #F5F5F5;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.head_1{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.info{
+    margin-right: 100px;
+}
+.footer{
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 20px 0px 20px 0px;
+}
+.txt_1{
+    font-size: 18px;
+    margin-bottom: 15px;
+}

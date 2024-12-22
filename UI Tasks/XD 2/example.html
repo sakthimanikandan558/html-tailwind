@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Modification Form</title>
+    <style>
+        .validation-message {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <form id="arrayForm">
+        <label for="elements">Elements (comma-separated):</label>
+        <input type="text" id="elements" name="elements"><br><br>
+        
+        <label for="position">Position (starting from 1):</label>
+        <input type="number" id="position" name="position" min="1"><br><br>
+        
+        <label for="newElement">New Element:</label>
+        <input type="text" id="newElement" name="newElement"><br><br>
+        
+        <div id="validation" class="validation-message"></div><br>
+        
+        <button type="button" onclick="validateAndModifyArray()">Submit</button>
+    </form>
+
+    <script>
+        function validateAndModifyArray() {
+            const elementsInput = document.getElementById('elements').value;
+            const positionInput = document.getElementById('position').value;
+            const newElementInput = document.getElementById('newElement').value;
+            const validationDiv = document.getElementById('validation');
+            validationDiv.textContent = '';
+
+            // Validation rules
+            if (!elementsInput) {
+                validationDiv.textContent = 'Please enter a sentence';
+                return;
+            }
+
+            const cleanedElements = elementsInput
+                .replace(/[^a-zA-Z,]/g, '')  // Remove special characters
+                .replace(/,{2,}/g, ',')      // Convert multiple commas to single comma
+                .replace(/(\s*,\s*)+/g, ',') // Remove spaces between commas
+                .replace(/,\s*$/, '');       // Remove trailing comma
+
+            if (/[^a-zA-Z,]/.test(elementsInput)) {
+                validationDiv.textContent = 'Special Character(s) not allowed';
+                return;
+            }
+
+            const elementsArray = cleanedElements.split(',');
+
+            if (elementsArray.length <= 1) {
+                validationDiv.textContent = 'Single string is not allowed. Input should be in A,B,C,D format.';
+                return;
+            }
+
+            // if (positionInput <= 0 || positionInput !== Math.floor(positionInput)) {
+            //     validationDiv.textContent = 'Positive number only allowed';
+            //     return;
+            // }
+
+            if (positionInput > elementsArray.length) {
+                validationDiv.textContent = `Enter position between 1 to ${elementsArray.length}`;
+                return;
+            }
+
+            if (!newElementInput) {
+                validationDiv.textContent = 'New element cannot be empty';
+                return;
+            }
+
+            // Modify the array
+            elementsArray[positionInput - 1] = newElementInput;
+
+            // Output the modified array
+            validationDiv.textContent = `Updated Array: ${elementsArray.join(',')}`;
+        }
+    </script>
+</body>
+</html>
